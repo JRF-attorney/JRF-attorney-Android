@@ -1,19 +1,33 @@
 package org.g0v.jrf_attorney;
 
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.RelativeLayout;
+
+import com.astuetz.PagerSlidingTabStrip;
+
+import org.g0v.jrf_attorney.adapter.TabAdapter;
 
 
 public class MainActivity extends ActionBarActivity {
 
-
+    RelativeLayout relativeLayout;
+    PagerSlidingTabStrip tabs;
+    ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        relativeLayout = (RelativeLayout) findViewById(R.id.relativeLayout_Main);
+        tabs = new PagerSlidingTabStrip(this);
+        viewPager = new ViewPager(this);
+        viewPager.setAdapter(new TabAdapter(getSupportFragmentManager()));
+        tabs.setViewPager(viewPager);
+        relativeLayout.addView(tabs);
 
     }
 
