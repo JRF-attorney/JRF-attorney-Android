@@ -1,2 +1,2 @@
-include ':app'
-include ':PagerSlidingTabStrip/library'
+include ':JRF-attorney'
+include ':PagerSlidingTabStrip'
