@@ -23,11 +23,11 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         relativeLayout = (RelativeLayout) findViewById(R.id.relativeLayout_Main);
-        tabs = new PagerSlidingTabStrip(this);
-        viewPager = new ViewPager(this);
-        viewPager.setAdapter(new TabAdapter(getSupportFragmentManager()));
-        tabs.setViewPager(viewPager);
-        relativeLayout.addView(tabs);
+//        tabs = new PagerSlidingTabStrip(this);
+//        viewPager = new ViewPager(this);
+//        viewPager.setAdapter(new TabAdapter(getSupportFragmentManager()));
+//        tabs.setViewPager(viewPager);
+//        relativeLayout.addView(tabs);
 
     }
 

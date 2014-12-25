@@ -1,2 +1,9 @@
 include ':JRF-attorney'
 include ':PagerSlidingTabStrip'
+
+//common lib
+def facebookLibDir = file('/Users/TakumaLee/Documents/Mobile/Library/facebook-android-sdk-3.21.1/facebook')
+def rootProjectDescriptor = settings.rootProject
+settings.createProjectDescriptor(rootProjectDescriptor, 'facebook', facebookLibDir)
+include ':facebook'
+//project(':facebook').projectDir = new File(settingsDir, '../Documents/Mobile/Library/facebook-android-sdk-3.21.1/facebook')
