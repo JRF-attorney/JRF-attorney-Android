@@ -1,5 +1,6 @@
 package org.g0v.jrf_attorney;
 
+import android.graphics.Color;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -23,11 +24,13 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         relativeLayout = (RelativeLayout) findViewById(R.id.relativeLayout_Main);
-//        tabs = new PagerSlidingTabStrip(this);
-//        viewPager = new ViewPager(this);
-//        viewPager.setAdapter(new TabAdapter(getSupportFragmentManager()));
-//        tabs.setViewPager(viewPager);
-//        relativeLayout.addView(tabs);
+        tabs = new PagerSlidingTabStrip(this);
+        viewPager = new ViewPager(this);
+        viewPager.setAdapter(new TabAdapter(getSupportFragmentManager()));
+        tabs.setViewPager(viewPager);
+        tabs.setBackgroundColor(Color.RED);
+        tabs.setTextColor(Color.WHITE);
+        relativeLayout.addView(tabs);
 
     }
 
