@@ -2,6 +2,15 @@
 <resources>
 
     <string name="app_name">JRF-attorney</string>
+    
+    <string-array name="function">
+        <item>律師名單</item>
+        <item>登檔</item>
+        <item>案件清單</item>
+        <item>討論區</item>
+    </string-array>
+    <string name="title_activity_jrehome">JREHomeActivity</string>
+
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 

@@ -1,2 +1,2 @@
 include ':JRF-attorney'
-include ':PagerSlidingTabStrip'
+include ':SimpleMaterialPager'
