@@ -1,17 +1,2 @@
 include ':JRF-attorney'
 include ':SimpleMaterialPager'
-
-//common lib
-def facebookLibDir = file('/Users/TakumaLee/Documents/Mobile/Library/facebook-android-sdk-3.21.1/facebook')
-def rootProjectDescriptor = settings.rootProject
-settings.createProjectDescriptor(rootProjectDescriptor, 'facebook', facebookLibDir)
-include ':facebook'
-
-def takumatutorialLibDir = file('/Users/TakumaLee/Documents/project/Takuma/TakumaTutorials/library')
-settings.createProjectDescriptor(rootProjectDescriptor, 'TakumaTutorial', takumatutorialLibDir)
-include ':TakumaTutorial'
-//project(':facebook').projectDir = new File(settingsDir, '../Documents/Mobile/Library/facebook-android-sdk-3.21.1/facebook')
-
-//def pagerLibDir = file('/Users/TakumaLee/Documents/Mobile/Library/PagerSlidingTabStrip/library')
-//settings.createProjectDescriptor(rootProjectDescriptor, 'PagerSlidingTagStrip', pagerLibDir)
-//include ':PagerSlidingTagStrip'
